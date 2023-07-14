@@ -1,0 +1,24 @@
+﻿Sub noUsername()
+  'Opens the specified URL in a running instance of the specified browser.
+  Call Browsers.Item(btChrome).Navigate("https://www.demo.guru99.com/v4/index.php")
+  'Maximizes the specified Window object.
+  Call Aliases.browser.BrowserWindow.Maximize
+  'Clicks the 'textboxUid' control.
+  Call Aliases.browser.pageGuru99BankHomePage.textboxUid.Click
+  'Clicks the 'passwordboxPassword' control.
+  Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.Click
+  'Checks whether the 'contentText' property of the Aliases.browser.pageGuru99BankHomePage.labelMessage23 object equals 'User-ID must not be blank'.
+  Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankHomePage.labelMessage23, "contentText", cmpEqual, "User-ID must not be blank")
+  'Clicks the 'passwordboxPassword' control.
+  Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.Click
+  'Sets the text Project.Variables.Password3 in the 'passwordboxPassword' text editor.
+  Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.SetText(Project.Variables.Password3)
+  'Clicks the 'submitbuttonLogin' button.
+  Call Aliases.browser.pageGuru99BankHomePage.submitbuttonLogin.ClickButton
+  'Waits until the browser loads the page and is ready to accept user input.
+  Call Aliases.browser.pageGuru99BankHomePage.Wait
+  'Checks whether the 'Message' property of the Aliases.browser.pageGuru99BankHomePage.Alert object equals 'User or Password is not valid'.
+  Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankHomePage.Alert, "Message", cmpEqual, "User or Password is not valid")
+  'Clicks the 'buttonOk' control.
+  Call Aliases.browser.pageGuru99BankHomePage.Alert.buttonOk.ClickButton
+End Sub

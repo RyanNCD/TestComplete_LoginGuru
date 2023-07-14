@@ -1,0 +1,22 @@
+﻿Sub wrongPass()
+  'Opens the specified URL in a running instance of the specified browser.
+  Call Browsers.Item(btChrome).Navigate("https://www.demo.guru99.com/v4/index.php")
+  'Maximizes the specified Window object.
+  Call Aliases.browser.BrowserWindow.Maximize
+  'Clicks the 'textboxUid' control.
+  Call Aliases.browser.pageGuru99BankHomePage.textboxUid.Click
+  'Enters 'mngr511295' in the 'textboxUid' object.
+  Call Aliases.browser.pageGuru99BankHomePage.textboxUid.Keys("mngr511295")
+  'Clicks the 'passwordboxPassword' control.
+  Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.Click
+  'Sets the text Project.Variables.Password4 in the 'passwordboxPassword' text editor.
+  Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.SetText(Project.Variables.Password4)
+  'Clicks the 'submitbuttonLogin' button.
+  Call Aliases.browser.pageGuru99BankHomePage.submitbuttonLogin.ClickButton
+  'Waits until the browser loads the page and is ready to accept user input.
+  Call Aliases.browser.pageGuru99BankHomePage.Wait
+  'Checks whether the 'Message' property of the Aliases.browser.pageGuru99BankHomePage.Alert object equals 'User or Password is not valid'.
+  Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankHomePage.Alert, "Message", cmpEqual, "User or Password is not valid")
+  'Clicks the 'buttonOk' control.
+  Call Aliases.browser.pageGuru99BankHomePage.Alert.buttonOk.ClickButton
+End Sub

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{4C8379CB-08E6-4DA9-816E-07444B05AF08}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{0F0A138A-D600-4D38-9B7D-6E69C602CB56}">
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="BrowserWindow" Key="{BDDA6FA4-6D83-45E3-BCA3-0DC2AE839B5A}">
+								<Image FileName="-837156436" Left="-9" Top="-9" Right="1929" Bottom="1029" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="0" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="pageGuru99BankHomePage" Key="{4F33D307-9220-4C38-BD10-8B8096F3C932}">
+								<Image FileName="-837156436" Left="0" Top="88" Right="1920" Bottom="1020" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.demo.guru99.com/v4/index.php" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textboxUid" Key="{6B21001C-9A3B-4B51-9D19-D4F473071DEB}">
+										<Image FileName="-837156436" Left="733" Top="530" Right="1032" Bottom="564" />
+										<TypeInfo Item0="{A9F1EE9C-E1A3-442A-AAED-86CBF76013FC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@name=&apos;uid&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;text&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//tr/td/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="passwordboxPassword" Key="{65E79EC9-5B47-4C27-9161-7E707CE61CD6}">
+										<Image FileName="-566348008" Left="733" Top="573" Right="1032" Bottom="607" />
+										<TypeInfo Item0="{A9F1EE9C-E1A3-442A-AAED-86CBF76013FC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@name=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//tr[2]/td/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="submitbuttonLogin" Key="{D0DAE91A-8131-449A-8EC6-4E843E2032FB}">
+										<Image FileName="1341949282" Left="733" Top="617" Right="825" Bottom="651" />
+										<TypeInfo Item0="{25719C9A-FE76-4AB1-B339-1DFDC3DA00E4}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@name=&apos;btnLogin&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@value=&apos;LOGIN&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="labelMessage23" Key="{7954FE59-472C-45FB-B1B2-D731A7BD6F69}">
+										<Image FileName="-488059147" Left="929" Top="533" Right="1218" Bottom="560" />
+										<TypeInfo Item0="{ADBA02AA-C4D9-43F6-B3E3-3762C4E65716}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#message23" />
+											</Selector>
+											<Selector>
+												<Value Value="//label[.=&apos;User-ID must not be blank&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//tr/td/label" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="cell" Key="{04C3A2C9-BA12-4B04-95EA-5FA23A88EB0D}">
+										<Image FileName="-280231551" Left="619" Top="618" Right="1424" Bottom="661" />
+										<TypeInfo Item0="{ADBA02AA-C4D9-43F6-B3E3-3762C4E65716}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//tr[3]/td[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="Alert" Key="{8E6D0959-1C7D-465E-B175-AA619BAA19E4}">
+										<Image FileName="-1306747421" Left="671" Top="77" Right="1249" Bottom="258" />
+										<TypeInfo Item0="{BC38BE33-218D-4282-B476-D20A1BB6A181}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Alert" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="buttonOk" Key="{4FEBA0FE-10CE-463C-BFCE-834E2F53276B}">
+												<Image FileName="1580858462" Left="1140" Top="186" Right="1220" Bottom="227" />
+												<TypeInfo Item0="{BD490BC5-CA97-4FDD-9C8C-0D06CA3A65CF}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Button" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="OK" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="labelMessage18" Key="{303CC3F5-C7A0-40B1-A445-FFB9560FDB2A}">
+										<Image FileName="348265829" Left="923" Top="577" Right="1239" Bottom="604" />
+										<TypeInfo Item0="{ADBA02AA-C4D9-43F6-B3E3-3762C4E65716}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#message18" />
+											</Selector>
+											<Selector>
+												<Value Value="//label[.=&apos;Password must not be blank&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//tr[2]/td/label" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageGuru99BankManagerHomepage" Key="{AF375CF6-CF83-439B-88EE-36221982F4E1}">
+								<Image FileName="-837156436" Left="0" Top="88" Right="1920" Bottom="1020" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://www.demo.guru99.com/v4/manager/Managerhomepage.php" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="cell" Key="{FDFF8846-5691-4B30-8966-BD7FE262D8EF}">
+										<Image FileName="1726453300" Left="290" Top="748" Right="1609" Bottom="785" />
+										<TypeInfo Item0="{ADBA02AA-C4D9-43F6-B3E3-3762C4E65716}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//td[.=&apos;Manger Id : mngr511295&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//tr[3]/td" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="explorer" Key="{113190A3-4498-4385-9BC4-68DB79909EA2}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="explorer" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndShell_TrayWnd" Key="{E6D1EB7E-3809-4B47-8142-003D48371DC3}">
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Shell_TrayWnd" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="DesktopWindowXamlSource" Key="{0182E06F-5DB2-404B-9349-9018E275B48B}">
+										<TypeInfo Item0="{8BF3460F-6267-4916-BB13-74DB49A31A58}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Windows.UI.Composition.DesktopWindowContentBridge" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="DesktopWindowXamlSource" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{0F0A138A-D600-4D38-9B7D-6E69C602CB56}">
+			<Child Name="BrowserWindow" Owner="{BDDA6FA4-6D83-45E3-BCA3-0DC2AE839B5A}" />
+			<Child Name="pageGuru99BankHomePage" Owner="{4F33D307-9220-4C38-BD10-8B8096F3C932}">
+				<Child Name="textboxUid" Owner="{6B21001C-9A3B-4B51-9D19-D4F473071DEB}" />
+				<Child Name="passwordboxPassword" Owner="{65E79EC9-5B47-4C27-9161-7E707CE61CD6}" />
+				<Child Name="submitbuttonLogin" Owner="{D0DAE91A-8131-449A-8EC6-4E843E2032FB}" />
+				<Child Name="labelMessage23" Owner="{7954FE59-472C-45FB-B1B2-D731A7BD6F69}" />
+				<Child Name="cell" Owner="{04C3A2C9-BA12-4B04-95EA-5FA23A88EB0D}" />
+				<Child Name="Alert" Owner="{8E6D0959-1C7D-465E-B175-AA619BAA19E4}">
+					<Child Name="buttonOk" Owner="{4FEBA0FE-10CE-463C-BFCE-834E2F53276B}" />
+				</Child>
+				<Child Name="labelMessage18" Owner="{303CC3F5-C7A0-40B1-A445-FFB9560FDB2A}" />
+			</Child>
+			<Child Name="pageGuru99BankManagerHomepage" Owner="{AF375CF6-CF83-439B-88EE-36221982F4E1}">
+				<Child Name="cell" Owner="{FDFF8846-5691-4B30-8966-BD7FE262D8EF}" />
+			</Child>
+		</Child>
+		<Child Name="explorer" Owner="{113190A3-4498-4385-9BC4-68DB79909EA2}">
+			<Child Name="wndShell_TrayWnd" Owner="{E6D1EB7E-3809-4B47-8142-003D48371DC3}">
+				<Child Name="DesktopWindowXamlSource" Owner="{0182E06F-5DB2-404B-9349-9018E275B48B}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="15.0">
+	<children>
+		<child name="succes" key="{3FA88243-6921-4868-B41B-03C9278695CB}" path="succes.tcKDTest" />
+		<child name="noPassword" key="{7AB3495B-7163-4FE5-9111-BF8E08EAA379}" path="noPassword.tcKDTest" />
+		<child name="noUsername" key="{A1311818-2ADE-40E4-BE9F-2D63D3F5124D}" path="noUsername.tcKDTest" />
+		<child name="wrongPass" key="{7E718E9A-52DD-47B9-9397-680C5DE7CBC4}" path="wrongPass.tcKDTest" />
+		<child name="blank" key="{6DCC39E7-6B8A-44E9-B493-EB9A0B9E7184}" path="blank.tcKDTest" />
+	</children>
+</Root>

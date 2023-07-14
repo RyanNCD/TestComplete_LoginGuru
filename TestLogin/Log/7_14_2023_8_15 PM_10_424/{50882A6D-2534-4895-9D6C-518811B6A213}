@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{C78C89E8-F4A2-4139-996B-F353327163BE}"/>
+				<Prp name="end time" type="D" value="45121.8445921296"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="name" type="S" value="succes [KeywordTests - succes]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45121.8438710764"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{7AB82299-3F74-4693-BCAE-E4CE8A68904C}"/>
+				<Prp name="end time" type="D" value="45121.8454604167"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="name" type="S" value="blank [KeywordTests - blank]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45121.8445921875"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{39435ADF-49F2-47B0-BB72-FA684E7605D4}"/>
+				<Prp name="end time" type="D" value="45121.8438710648"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="name" type="S" value="TestLogin"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45121.8438710648"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

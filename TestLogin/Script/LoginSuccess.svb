@@ -1,0 +1,22 @@
+﻿Sub succes()
+  Call Project.Variables.Var1.Reset
+  While Not Project.Variables.Var1.IsEOF
+    'Opens the specified URL in a running instance of the specified browser.
+    Call Browsers.Item(btChrome).Navigate("https://www.demo.guru99.com/v4/index.php")
+    'Maximizes the specified Window object.
+    Call Aliases.browser.BrowserWindow.Maximize
+    'Clicks the 'textboxUid' control.
+    Call Aliases.browser.pageGuru99BankHomePage.textboxUid.Click
+    'Enters KeywordTests.succes.Variables.Var1("Username") in the 'textboxUid' object.
+    Call Aliases.browser.pageGuru99BankHomePage.textboxUid.Keys(Project.Variables.Var1.Value("Username"))
+    'Clicks the 'passwordboxPassword' control.
+    Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.Click
+    'Sets the text KeywordTests.succes.Variables.Var1("Password") in the 'passwordboxPassword' text editor.
+    Call Aliases.browser.pageGuru99BankHomePage.passwordboxPassword.SetText(Project.Variables.Var1.Value("Password"))
+    'Clicks the 'submitbuttonLogin' button.
+    Call Aliases.browser.pageGuru99BankHomePage.submitbuttonLogin.ClickButton
+    'Checks whether the 'contentText' property of the Aliases.browser.pageGuru99BankManagerHomepage.cell object equals KeywordTests.succes.Variables.Var1("ManagerID").
+    Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankManagerHomepage.cell, "contentText", cmpEqual, Project.Variables.Var1.Value("ManagerID"))
+    Call Project.Variables.Var1.Next
+  WEnd
+End Sub

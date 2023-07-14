@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="LoginSuccess" key="{9F664BE9-120F-40B2-8B8C-545BD4B96901}" path="LoginSuccess.svb" />
+		<child name="LoginBlank" key="{8658153B-2ECE-453C-9A9E-8B0C1A0F1898}" path="LoginBlank.svb" />
+		<child name="LoginNoPassword" key="{8481DD6D-AAEC-47A5-A76A-EE510A5345DB}" path="LoginNoPassword.svb" />
+		<child name="LoginNoUsernamer" key="{D32C4107-D67C-4E29-A89A-340A48F6462B}" path="LoginNoUsernamer.svb" />
+		<child name="LoginWrongPass" key="{D0BA65E0-3367-4D26-9E5A-8701F885E23A}" path="LoginWrongPass.svb" />
+	</children>
+</Root>

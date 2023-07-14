@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{3FA88243-6921-4868-B41B-03C9278695CB}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="3" kind="0" dateTime="45121.3801273148" objectName="Aliases.browser.pageGuru99BankHomePage.textboxUid" objectLeft="733" objectTop="530" objectRight="1032" objectBottom="564" clickPointX="835" clickPointY="559" imageFileName="tcvi74655593199280.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="5" kind="0" dateTime="45121.3801388889" objectName="Aliases.browser.pageGuru99BankHomePage.passwordboxPassword" objectLeft="733" objectTop="573" objectRight="1032" objectBottom="607" clickPointX="785" clickPointY="594" imageFileName="tcvi74656593199282.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="6" kind="0" dateTime="45121.3802199074" objectName="Aliases.browser.pageGuru99BankHomePage.passwordboxPassword" objectLeft="733" objectTop="573" objectRight="1032" objectBottom="607" clickPointX="-1" clickPointY="-1" imageFileName="tcvi74661015199283.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="7" kind="0" dateTime="45121.3802893519" objectName="Aliases.browser.pageGuru99BankHomePage.submitbuttonLogin" objectLeft="733" objectTop="617" objectRight="825" objectBottom="651" clickPointX="786" clickPointY="647" imageFileName="tcvi74669046199284.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

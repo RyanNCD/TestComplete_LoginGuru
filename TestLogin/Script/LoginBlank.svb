@@ -1,0 +1,24 @@
+﻿Sub blank()
+  'Opens the specified URL in a running instance of the specified browser.
+  Call Browsers.Item(btChrome).Navigate("https://www.demo.guru99.com/v4/index.php")
+  'Maximizes the specified Window object.
+  Call Sys.Browser.BrowserWindow(0).Maximize
+  'Clicks the 'FindElement("//input[@name='uid']")' control.
+  Call Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("//input[@name='uid']").Click
+  'Clicks the 'FindElement("//input[@name='password']")' control.
+  Call Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("//input[@name='password']").Click
+  'Clicks the 'FindElement("//input[@name='btnReset']")' button.
+  Call Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("//input[@name='btnReset']").ClickButton
+  'Checks whether the 'contentText' property of the Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("#message23") object equals 'User-ID must not be blank'.
+  Call aqObject.CheckProperty(Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("#message23"), "contentText", cmpEqual, "User-ID must not be blank")
+  'Checks whether the 'contentText' property of the Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("#message18") object equals 'Password must not be blank'.
+  Call aqObject.CheckProperty(Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("#message18"), "contentText", cmpEqual, "Password must not be blank")
+  'Clicks the 'FindElement("//input[@name='btnLogin']")' button.
+  Call Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").FindElement("//input[@name='btnLogin']").ClickButton
+  'Waits until the browser loads the page and is ready to accept user input.
+  Call Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").Wait
+  'Checks whether the 'Message' property of the Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").Alert object equals 'User or Password is not valid'.
+  Call aqObject.CheckProperty(Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").Alert, "Message", cmpEqual, "User or Password is not valid")
+  'Clicks the 'Button("OK")' control.
+  Call Sys.Browser.Page("https://www.demo.guru99.com/v4/index.php").Alert.Button("OK").ClickButton
+End Sub
